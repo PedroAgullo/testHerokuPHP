@@ -13,7 +13,7 @@ $resultado = $mysqli->query("SELECT id, titulo FROM plato");
 echo '<ol>';
 while($reg=$resultado->fetch_assoc()){
     echo '<li>';
-    echo '<a href="http://localhost/dev/php/Dia3/Ejer3/detalle.php?id='.$reg['id'].'&titulo='.$reg['titulo'].'">'.$reg['titulo'].'</a>';
+    echo '<a href="https://test-php-pam.herokuapp.com/detalle.php?id='.$reg['id'].'&titulo='.$reg['titulo'].'">'.$reg['titulo'].'</a>';
     echo '</li>';
 }
 
